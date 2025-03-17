@@ -1,0 +1,153 @@
+/* The Navigation CSS */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #9cc026, #54be73);
+}
+
+.logo-image{
+    border-radius: 20%;
+    overflow: hidden;
+    margin: -15px;
+}
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #cae3c5;
+    color: green;
+}
+.active {
+    background: rgba(0, 0, 0, 0.4); /* Background color for the active tab */
+    color: #fff; /* Text color for the active tab */
+  }
+/* END OF NAVIGATION CSS */
+
+/* Contact Form */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.contact-form{
+    position: relative;
+    z-index: 0;
+    background: #ffffff;
+    padding: 30px;
+    justify-content: center;
+    grid-template-rows: 1fr auto 1fr;
+    align-items: center;
+}
+.container{
+    margin-top: 0 auto;
+}
+/* For the main form */
+.contact-form h2{
+    line-height: 40px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #2e6927;
+    text-align: center;
+}
+.contact-form .main{
+    box-shadow: 2px 9px 49px -10px rgb(57, 123, 57);
+    position: relative;
+    display: flex;
+    margin: 30px 0;
+}
+.content{
+    flex-basis: 60%;
+    padding: 3em 3em;
+    background: #fff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+/* The Image on form */
+.form-img{
+    flex-basis: 40%;
+    background: #ffffff;
+    background-size: cover;
+    padding: 50px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    align-items: center;
+}
+.form-img img{
+    max-width: 100%;
+}
+.btn,
+button,
+input{
+    border-radius: 35px;
+}
+.btn:hover,
+button:hover{
+    color: #53d194;
+    transition: 0.5s ease;
+}
+.contact-form form{
+    margin: 30px 0;
+}
+.contact-form input,
+textarea{
+    outline: none;
+    margin-bottom: 15px;
+    font-stretch: 16px;
+    color: #999;
+    padding: 14px 20px;
+    width: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid rgb(123, 188, 79);
+    background: #fcfcfc;
+    transition: 0.3s ease;
+}
+.contact-form input:focus{
+    background: transparent;
+    border: 1px solid #27694a;
+}
+.contact-form button{
+    font-size: 18px;
+    color: #fff;
+    width: 100%;
+    background: #1f8427;
+    font-weight: 600;
+    transition: 0.3s ease;
+    padding: 14px 15px;
+    border: 1px solid #366927;
+
+}
+@media(max-width:736px){
+    .contact-form .main{
+        flex-direction: column;
+    }
+    .contact-form form{
+        margin-top: 30px;
+        margin-bottom: 10px;
+
+    }
+    .form-img{
+        border-radius: 0;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        order: 2;
+    }
+    .content{
+        order: 1;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+}
+/* End of Contact Form */

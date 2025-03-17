@@ -1,0 +1,161 @@
+/* universal class for arranging container in a flex  */
+
+.container {
+    display: flex;
+   
+}
+
+
+/* button class for the all the containers of blogs */
+
+
+
+/* image class for all the images in the container of the blogs */
+
+/* .img { */
+    /* float: center; */
+    /* margin-top: 0.5vw; */
+    /* padding-top: 1vw; */
+    /* margin-bottom: 1vw; */
+    /* border-radius: 8px 8px; */
+/* } */
+
+
+/* font class for the fonts of the container of the blogs */
+
+.font {
+    font-size: 130%;
+    font-weight: 10%;
+}
+
+
+/* here all the blogs are been made inside the container box and are  
+displayed in a flex property as like box1......box6, box7 standing different 
+due to alignment feature. numbering of boxes are done horizontally. */
+
+.box1 {
+    box-sizing: border-box;
+    border: grey;
+    width: 40%;
+    text-align: center;
+    transition: transform .2s;
+    height: 650px;
+    background-color:rgb(247, 247, 247);
+    margin-left: 3vw;
+    padding: 1%;
+    box-shadow: 0px 0px 15px rgb(69, 67, 67);
+    margin-top: 7vw;
+}
+.box1:hover
+{
+    transform: scale(1.1);
+}
+
+.box2 {
+    float: right;
+    box-sizing: border-box;
+    border:  grey;
+    width: 40%;
+    text-align: center;
+    transition: transform .2s;
+    height: 650px;
+    background-color:rgb(247, 247, 247);
+    margin-left: 12vw;
+    /* padding-top: 1%; */
+    box-shadow: 0px 0px 15px rgb(69, 67, 67);
+    margin-top: 7vw;
+    padding: 1.5%;
+    
+}
+.box2:hover
+{
+    transform: scale(1.1);
+}
+
+.box3 {
+    float: left;
+    box-sizing: border-box;
+    border:  grey;
+    width: 40%;
+    text-align: center;
+    transition: transform .2s;
+    height: 700px;
+    background-color: rgb(247, 247, 247);
+    margin-left: 3vw;
+    padding: 0.8%;
+    box-shadow: 0px 0px 15px rgb(69, 67, 67);
+    margin-top: 7.5vw;
+}
+.box3:hover
+{
+    transform: scale(1.1);
+}
+
+.box4 {
+    float: right;
+    box-sizing: border-box;
+    border: grey;
+    width: 40%;
+    text-align: center;
+    transition: transform .2s;
+    height: 700px;
+    background-color: rgb(247, 247, 247) ;
+    margin-left: 12vw;
+    padding: 1%;
+    box-shadow: 0px 0px 15px rgb(69, 67, 67);
+    margin-top: 7.5vw;
+}
+.box4:hover
+{
+    transform: scale(1.1);
+}
+
+/* Different container box has been made for box 7 due to alignment feature.  */
+
+.box5 {
+    float: left;
+    box-sizing: border-box;
+    border:  grey;
+    width: 40%;
+    text-align: center;
+   transition: transform .2s;
+   height: 700px;
+   background-color: rgb(247, 247, 247) ;
+    margin-left: 3vw;
+    padding: 1%;
+    box-shadow: 0px 0px 15px rgb(69, 67, 67);
+    margin-top: 7.5vw;
+}
+.box5:hover
+{
+    transform: scale(1.1);
+}
+.box6 {
+    float: right;
+    box-sizing: border-box;
+    border:  grey;
+    width: 40%;
+    text-align: center;
+    transition: transform .2s;
+    height: 700px;
+    background-color: rgb(247, 247, 247);
+    margin-left: 12vw;
+    padding: 1%;
+    box-shadow: 0px 0px 15px rgb(69, 67, 67);
+    margin-top: 7.5vw;
+}
+.box6:hover
+{
+    transform: scale(1.1);
+}
+.footer {
+    position: absolute;
+    width: 95%;
+    background-color:rgb(247, 247, 247) ;
+    color: black;
+    text-align: left;
+ }
+.active {
+    background: rgba(0, 0, 0, 0.4); /* Background color for the active tab */
+    color: #fff; /* Text color for the active tab */
+  }

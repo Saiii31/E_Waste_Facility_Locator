@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>EWaste Prediction</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/static/css/index.css">
+  <link rel="icon" type="image/x-icon" href="/static/css/favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Borel&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+  <h1>Know your E-waste</h1>
+  <br>
+  <form action="/submit" method="post" enctype="multipart/form-data">
+
+    <div class="form-group">
+      <label for="pwd" id="file-input-label">Upload Your Image</label>        
+      <input type="file" name="my_image" id="pwd">
+    </div>
+
+    <div class="form-group">        
+      <div class="inputbtn">
+        <br><br>
+        <button type="submit" id="submitbtn">Submit</button>
+        <br><br>
+      </div>
+    </div>
+  </form>
+
+	{% if prediction %}
+  <img src="{{img_path}}" height="400px" width="400px">
+	<h2> Your Prediction   : <i> {{prediction}} </i></h2>
+
+	{% endif %}
+
+  {% if prediction == "Camera" %}
+    <a href="/camera">Click here to know about disposing {{prediction}}</a>
+
+  {% elif prediction == "Keyboard" %}
+    <a href="/keyboard">Click here to know about disposing {{prediction}}</a>
+
+  {% elif prediction == "Laptop" %}
+    <a href="/laptop">Click here to know about disposing {{prediction}}</a>
+
+  {% elif prediction == "Microwave" %}
+    <a href="/microwave">Click here to know about disposing {{prediction}}</a>
+
+  {% elif prediction == "Mobile" %}
+    <a href="/mobile">Click here to know about disposing {{prediction}}</a>
+
+  {% elif prediction == "Mouse" %}
+    <a href="/mouse">Click here to know about disposing {{prediction}}</a>
+
+  {% elif prediction == "Smartwatch" %}
+    <a href="/smartwatch">Click here to know about disposing {{prediction}}</a>
+
+  {% elif prediction == "TV" %}
+    <a href="/tv">Click here to know about disposing {{prediction}}</a>
+
+  {% else %}
+    <p> No prediction available </p>
+
+  {% endif %}
+</div>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+/* Background image */
+body
+{
+    background-image: url(Images/main.png);
+    backdrop-filter: blur(2px);
+    padding-top: 50px;
+}
+/* Logo CSS */
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 30px #999;
+}
+
+/* Animation on the logo */
+.fade {
+    animation: fadeIn 5s;
+    -webkit-animation: fadeIn 5s;
+    -moz-animation: fadeIn 5s;
+    -o-animation: fadeIn 5s;
+    -ms-animation: fadeIn 5s;
+  }
+
+  @keyframes example {
+    from {
+      width: 0;
+    }
+
+    to {
+      width: 599px;
+    }
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+  /*END OF Animation on the logo */

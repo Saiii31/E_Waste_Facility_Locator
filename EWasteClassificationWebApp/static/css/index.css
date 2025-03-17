@@ -1,0 +1,51 @@
+body{
+    background: linear-gradient(rgba(32, 102, 15, 0.772),rgba(4, 9, 30, 0.731)),url(/static/css/background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: aliceblue;
+    font-family: 'Borel', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+}
+a:link{
+    background-color: rgb(35, 168, 117);
+    padding: 14px 25px;
+    margin-bottom: 20px;
+}
+
+.container{
+    text-align: center;
+    font-family: 'Borel', cursive;
+    font-family: 'Poppins', sans-serif;
+    color: aliceblue;
+}
+
+.container .form-group button[type="submit"]
+{
+    width: 100px;
+    background: rgb(35, 168, 117);
+    color: rgb(255, 255, 255, 1);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container .form-group input[type="file"]{
+    font-family: 'Borel', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container1{
+    margin: 40px;
+    padding: 40px;
+    width: 80%;
+    opacity: 0.75;
+    background: rgb(246, 246, 246);
+    color: black;
+}
