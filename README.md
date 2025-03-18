@@ -12,7 +12,7 @@ The **E-Waste Facility Locator** is an AI-powered web application that classifie
 ## Tech Stack
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** APIs
-- **Machine Learning:** Python, TensorFlow/Keras
+- **Machine Learning:** Python
 
 ## Installation
 ### Prerequisites
@@ -31,15 +31,7 @@ The **E-Waste Facility Locator** is an AI-powered web application that classifie
    ```bash
    pip install -r requirements.txt
    ```
-3. Set up the database:
-   ```sql
-   CREATE DATABASE ewaste_locator;
-   ```
-4. Run the backend server:
-   ```bash
-   python app.py
-   ```
-5. Open `index.html` in a browser to access the frontend.
+3. Open `index.html` in a browser to access the frontend.
 
 ## Usage
 1. Upload an image of e-waste.
